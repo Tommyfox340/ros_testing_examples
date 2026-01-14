@@ -7,5 +7,5 @@
 
   <node pkg="tortoisebot_waypoints" type="reset_world_client.py" name="reset_world_client" />
   <node pkg="tortoisebot_waypoints" type="tortoisebot_action_server.py" name="tortoisebot_as_node" />
-  <test test-name="test_waypoint_reached" pkg="tortoisebot_waypoints" type="test_waypoint_fail.py" />
+  <test test-name="test_waypoint_reached" pkg="tortoisebot_waypoints" type="test_waypoint_reached.py" />
 </launch>
