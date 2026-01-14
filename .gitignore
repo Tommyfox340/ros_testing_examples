@@ -1,0 +1,87 @@
+########################################
+# ROS 2 / colcon / ament
+########################################
+build/
+install/
+log/
+**/colcon.meta
+**/compile_commands.json
+
+# ament/CTest test results
+**/test_results/
+**/Testing/
+**/CTestTestfile.cmake
+**/CTestCostData.txt
+**/DartConfiguration.tcl
+**/*.gtest.xml
+**/*.xunit.xml
+
+########################################
+# ROS 1 / catkin
+########################################
+devel/
+devel_isolated/
+install_isolated/
+.catkin_tools/
+.catkin_workspace
+**/catkin_generated/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
+
+########################################
+# CMake / build system leftovers
+########################################
+**/cmake-build-*/
+**/*.cmake.user
+**/*.ninja
+**/*.ninja_deps
+**/*.ninja_log
+**/.cache/
+
+########################################
+# Python
+########################################
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+dist/
+build/          # (already covered by ROS2, ok to repeat)
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.pyre/
+ruff_cache/
+hypothesis/
+
+########################################
+# Logs / runtime artifacts
+########################################
+*.log
+*.pid
+*.out
+
+# ROS bag files (both ROS1/ROS2)
+*.bag
+*.bag.active
+*.bag.orig
+*.db3
+*.db3-wal
+*.db3-shm
+metadata.yaml
+
+########################################
+# IDEs / Editors
+#################################
