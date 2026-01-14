@@ -1,17 +1,24 @@
-# ROS Testing
+# ROS Testing Examples
 
-Waypoint navigation testing packages for ROS1 and ROS2 robots.
+Example packages demonstrating integration testing patterns for ROS1 and ROS2 robot navigation.
+
+This repository shows how to:
+
+- Write integration tests for ROS action servers
+- Use GTest (C++) and rostest (Python) testing frameworks
+- Test waypoint navigation with pass/fail conditions
 
 ## Packages
 
-| Package | ROS Version | Robot | Language |
-|---------|-------------|-------|----------|
-| [fastbot_waypoints](fastbot_waypoints/) | ROS2 (Galactic/Humble) | FastBot | C++ |
-| [tortoisebot_waypoints](tortoisebot_waypoints/) | ROS1 (Noetic) | TortoiseBot | Python |
+| Package                                         | ROS Version            | Robot       | Language |
+| ----------------------------------------------- | ---------------------- | ----------- | -------- |
+| [fastbot_waypoints](fastbot_waypoints/)         | ROS2 (Galactic/Humble) | FastBot     | C++      |
+| [tortoisebot_waypoints](tortoisebot_waypoints/) | ROS1 (Noetic)          | TortoiseBot | Python   |
 
 ## Overview
 
 Both packages provide:
+
 - **Waypoint Action Server** - Navigates robot to target X, Y coordinates
 - **Integration Tests** - Verify robot reaches target position and orientation
 - **Pass/Fail Modes** - Easily switch between passing and failing test conditions
@@ -83,8 +90,8 @@ Edit `tortoisebot_waypoints/test/waypoint_test.test`:
 
 ## Expected Results
 
-| Condition | FastBot (ROS2) | TortoiseBot (ROS1) |
-|-----------|----------------|---------------------|
+| Condition   | FastBot (ROS2)                  | TortoiseBot (ROS1)              |
+| ----------- | ------------------------------- | ------------------------------- |
 | **Passing** | `3 tests, 0 errors, 0 failures` | `2 tests, 0 errors, 0 failures` |
 | **Failing** | `2 tests, 1 errors, 1 failures` | `1 tests, 1 errors, 0 failures` |
 
@@ -92,4 +99,3 @@ Edit `tortoisebot_waypoints/test/waypoint_test.test`:
 
 - [fastbot_waypoints/README.md](fastbot_waypoints/README.md) - Detailed FastBot instructions
 - [tortoisebot_waypoints/README.md](tortoisebot_waypoints/README.md) - Detailed TortoiseBot instructions
-
