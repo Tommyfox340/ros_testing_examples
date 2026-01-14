@@ -99,3 +99,7 @@ Edit `tortoisebot_waypoints/test/waypoint_test.test`:
 
 - [fastbot_waypoints/README.md](fastbot_waypoints/README.md) - Detailed FastBot instructions
 - [tortoisebot_waypoints/README.md](tortoisebot_waypoints/README.md) - Detailed TortoiseBot instructions
+
+## License
+
+MIT License © 2026 Dmitri Manajev
